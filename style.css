@@ -1,0 +1,44 @@
+.field {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(images/pitch1.png);
+    background-size: cover;
+    height: 500px;
+}
+
+.bat {
+    width: 220px;
+}
+
+.ball img {
+    width: 40px;
+    height: 40px;
+}
+
+.ball {
+    position: relative;
+    left: 317px;
+    bottom: 64px;
+}
+
+.field:hover .bat {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+    transition: transform .5s ease-in;
+}
+
+.field:hover .ball {
+    transform: translate(550px, -100px);
+    transition: transform 1s ease-out;
+    transition-delay: .5s;
+}
+
+.fielder {
+    transform: rotate(20deg);
+}
+
+.field:hover .fielder {
+    transform: translate(-200px);
+    transition: transform 1s .6s;
+}
